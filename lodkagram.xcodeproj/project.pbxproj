@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		106E03C2C151FF9ECDF2AF0F /* Pods_lodkagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B304C0E6505AE9BB343B7C8 /* Pods_lodkagram.framework */; };
 		497B401429AE6AA6003333F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401329AE6AA6003333F9 /* AppDelegate.swift */; };
 		497B401629AE6AA6003333F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401529AE6AA6003333F9 /* SceneDelegate.swift */; };
 		497B401829AE6AA6003333F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401729AE6AA6003333F9 /* ViewController.swift */; };
 		497B401B29AE6AA6003333F9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497B401929AE6AA6003333F9 /* Main.storyboard */; };
 		497B401D29AE6AA7003333F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 497B401C29AE6AA7003333F9 /* Assets.xcassets */; };
 		497B402029AE6AA7003333F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 497B401E29AE6AA7003333F9 /* LaunchScreen.storyboard */; };
+		497B402829AE7D83003333F9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 497B402729AE7D83003333F9 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,10 @@
 		497B401C29AE6AA7003333F9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		497B401F29AE6AA7003333F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		497B402129AE6AA7003333F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		497B402729AE7D83003333F9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8985E330A51AAB3B50345D0E /* Pods-lodkagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lodkagram.release.xcconfig"; path = "Target Support Files/Pods-lodkagram/Pods-lodkagram.release.xcconfig"; sourceTree = "<group>"; };
+		9B304C0E6505AE9BB343B7C8 /* Pods_lodkagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_lodkagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F92D48E00D77B05FE8F10CEE /* Pods-lodkagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-lodkagram.debug.xcconfig"; path = "Target Support Files/Pods-lodkagram/Pods-lodkagram.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				106E03C2C151FF9ECDF2AF0F /* Pods_lodkagram.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		45CF0A2110183F57734F08CB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9B304C0E6505AE9BB343B7C8 /* Pods_lodkagram.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		497B400729AE6AA6003333F9 = {
 			isa = PBXGroup;
 			children = (
 				497B401229AE6AA6003333F9 /* lodkagram */,
 				497B401129AE6AA6003333F9 /* Products */,
+				53B5C2A0614BEAB07CD5FBFA /* Pods */,
+				45CF0A2110183F57734F08CB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,8 +80,19 @@
 				497B401C29AE6AA7003333F9 /* Assets.xcassets */,
 				497B401E29AE6AA7003333F9 /* LaunchScreen.storyboard */,
 				497B402129AE6AA7003333F9 /* Info.plist */,
+				497B402729AE7D83003333F9 /* GoogleService-Info.plist */,
 			);
 			path = lodkagram;
+			sourceTree = "<group>";
+		};
+		53B5C2A0614BEAB07CD5FBFA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F92D48E00D77B05FE8F10CEE /* Pods-lodkagram.debug.xcconfig */,
+				8985E330A51AAB3B50345D0E /* Pods-lodkagram.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 497B402429AE6AA7003333F9 /* Build configuration list for PBXNativeTarget "lodkagram" */;
 			buildPhases = (
+				DCF7840D272B7A16CA597F09 /* [CP] Check Pods Manifest.lock */,
 				497B400C29AE6AA6003333F9 /* Sources */,
 				497B400D29AE6AA6003333F9 /* Frameworks */,
 				497B400E29AE6AA6003333F9 /* Resources */,
+				4A23CFED0A2EB5DF46CBF755 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,12 +156,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				497B402029AE6AA7003333F9 /* LaunchScreen.storyboard in Resources */,
+				497B402829AE7D83003333F9 /* GoogleService-Info.plist in Resources */,
 				497B401D29AE6AA7003333F9 /* Assets.xcassets in Resources */,
 				497B401B29AE6AA6003333F9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4A23CFED0A2EB5DF46CBF755 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lodkagram/Pods-lodkagram-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-lodkagram/Pods-lodkagram-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-lodkagram/Pods-lodkagram-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DCF7840D272B7A16CA597F09 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-lodkagram-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		497B400C29AE6AA6003333F9 /* Sources */ = {
@@ -282,6 +355,7 @@
 		};
 		497B402529AE6AA7003333F9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F92D48E00D77B05FE8F10CEE /* Pods-lodkagram.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -310,6 +384,7 @@
 		};
 		497B402629AE6AA7003333F9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8985E330A51AAB3B50345D0E /* Pods-lodkagram.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
