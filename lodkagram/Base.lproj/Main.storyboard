@@ -11,7 +11,7 @@
         <!--Upload-->
         <scene sceneID="R9t-2n-OKU">
             <objects>
-                <viewController id="Fyy-1F-a47" sceneMemberID="viewController">
+                <viewController id="Fyy-1F-a47" customClass="UploadViewController" customModule="lodkagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ygr-M4-e1X">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -22,12 +22,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7JS-th-kot" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-632" y="146"/>
+            <point key="canvasLocation" x="-633" y="188"/>
+        </scene>
+        <!--Settings-->
+        <scene sceneID="GSh-cP-AV9">
+            <objects>
+                <viewController id="9My-sy-bDi" customClass="SettingsViewController" customModule="lodkagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FwN-Rh-Ais">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1z6-Tt-akL">
+                                <rect key="frame" x="96" y="379" width="201" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Logout"/>
+                                <connections>
+                                    <action selector="logoutClicked:" destination="9My-sy-bDi" eventType="touchUpInside" id="df9-4o-nwi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="HuH-Aj-jAH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1z6-Tt-akL" firstAttribute="top" secondItem="HuH-Aj-jAH" secondAttribute="top" constant="320" id="BoY-0J-wLg"/>
+                            <constraint firstItem="1z6-Tt-akL" firstAttribute="leading" secondItem="HuH-Aj-jAH" secondAttribute="leading" constant="96" id="WbQ-0U-jr8"/>
+                            <constraint firstItem="1z6-Tt-akL" firstAttribute="centerX" secondItem="FwN-Rh-Ais" secondAttribute="centerX" id="YtS-5v-a1S"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Settings" image="s.circle.fill" catalog="system" id="nmq-vf-uZH"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="presentation" identifier="toViewController" modalPresentationStyle="fullScreen" id="Xu4-10-QND"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Qbg-2N-sdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-634.35114503816794" y="856.33802816901414"/>
         </scene>
         <!--Feed-->
         <scene sceneID="PIM-1Y-uwN">
             <objects>
-                <viewController id="ASk-a2-K7E" sceneMemberID="viewController">
+                <viewController id="ASk-a2-K7E" customClass="FeedViewController" customModule="lodkagram" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Uke-5P-DXG">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -52,6 +86,7 @@
                     <connections>
                         <segue destination="ASk-a2-K7E" kind="relationship" relationship="viewControllers" id="rmB-JF-wU8"/>
                         <segue destination="Fyy-1F-a47" kind="relationship" relationship="viewControllers" id="Emh-lC-oTy"/>
+                        <segue destination="9My-sy-bDi" kind="relationship" relationship="viewControllers" id="DSN-Ly-ARA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Z9s-lU-yt7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -66,7 +101,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awj-dx-3YZ">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Awj-dx-3YZ">
                                 <rect key="frame" x="54" y="430" width="111" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="111" id="D1c-Pp-WOg"/>
@@ -77,7 +112,7 @@
                                     <action selector="signInClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YPu-NA-6dy"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRm-kT-7AG">
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RRm-kT-7AG">
                                 <rect key="frame" x="228" y="430" width="111" height="60"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
@@ -85,7 +120,7 @@
                                     <action selector="signUpClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="K22-rg-7F6"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOJ-9s-Z0h">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hOJ-9s-Z0h">
                                 <rect key="frame" x="69" y="254" width="254" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="34" id="ONZ-qc-xfv"/>
@@ -93,12 +128,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0X-al-qWt">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="X0X-al-qWt">
                                 <rect key="frame" x="69" y="313" width="254" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="lodkagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-aD-PFw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lodkagram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JYG-aD-PFw">
                                 <rect key="frame" x="41" y="103" width="311" height="59"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="Qil-50-Jnr"/>
@@ -129,6 +164,7 @@
                             <constraint firstItem="hOJ-9s-Z0h" firstAttribute="leading" secondItem="X0X-al-qWt" secondAttribute="leading" id="xUr-hb-7ku"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="rwr-UI-6ks"/>
                     <connections>
                         <outlet property="emailText" destination="hOJ-9s-Z0h" id="TDb-nv-Eo9"/>
                         <outlet property="passwordText" destination="X0X-al-qWt" id="fFX-rN-0Ut"/>
@@ -142,6 +178,7 @@
     </scenes>
     <resources>
         <image name="f.circle.fill" catalog="system" width="128" height="123"/>
+        <image name="s.circle.fill" catalog="system" width="128" height="123"/>
         <image name="u.circle.fill" catalog="system" width="128" height="123"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

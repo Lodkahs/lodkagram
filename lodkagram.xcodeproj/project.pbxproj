@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		106E03C2C151FF9ECDF2AF0F /* Pods_lodkagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9B304C0E6505AE9BB343B7C8 /* Pods_lodkagram.framework */; };
+		49241F7C29AFCAFD00D62EDD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49241F7B29AFCAFD00D62EDD /* FeedViewController.swift */; };
+		49241F7E29AFCB1500D62EDD /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49241F7D29AFCB1500D62EDD /* UploadViewController.swift */; };
+		49241F8029AFCB2600D62EDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49241F7F29AFCB2600D62EDD /* SettingsViewController.swift */; };
 		497B401429AE6AA6003333F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401329AE6AA6003333F9 /* AppDelegate.swift */; };
 		497B401629AE6AA6003333F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401529AE6AA6003333F9 /* SceneDelegate.swift */; };
 		497B401829AE6AA6003333F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401729AE6AA6003333F9 /* ViewController.swift */; };
@@ -18,6 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		49241F7B29AFCAFD00D62EDD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		49241F7D29AFCB1500D62EDD /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
+		49241F7F29AFCB2600D62EDD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		497B401029AE6AA6003333F9 /* lodkagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lodkagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497B401329AE6AA6003333F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		497B401529AE6AA6003333F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,9 @@
 				497B401329AE6AA6003333F9 /* AppDelegate.swift */,
 				497B401529AE6AA6003333F9 /* SceneDelegate.swift */,
 				497B401729AE6AA6003333F9 /* ViewController.swift */,
+				49241F7B29AFCAFD00D62EDD /* FeedViewController.swift */,
+				49241F7D29AFCB1500D62EDD /* UploadViewController.swift */,
+				49241F7F29AFCB2600D62EDD /* SettingsViewController.swift */,
 				497B401929AE6AA6003333F9 /* Main.storyboard */,
 				497B401C29AE6AA7003333F9 /* Assets.xcassets */,
 				497B401E29AE6AA7003333F9 /* LaunchScreen.storyboard */,
@@ -91,7 +100,6 @@
 				F92D48E00D77B05FE8F10CEE /* Pods-lodkagram.debug.xcconfig */,
 				8985E330A51AAB3B50345D0E /* Pods-lodkagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -212,8 +220,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				497B401829AE6AA6003333F9 /* ViewController.swift in Sources */,
+				49241F7E29AFCB1500D62EDD /* UploadViewController.swift in Sources */,
 				497B401429AE6AA6003333F9 /* AppDelegate.swift in Sources */,
+				49241F7C29AFCAFD00D62EDD /* FeedViewController.swift in Sources */,
 				497B401629AE6AA6003333F9 /* SceneDelegate.swift in Sources */,
+				49241F8029AFCB2600D62EDD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
