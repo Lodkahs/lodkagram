@@ -18,19 +18,20 @@
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="select" translatesAutoresizingMaskIntoConstraints="NO" id="a40-3J-M7l">
                                 <rect key="frame" x="51" y="123" width="291" height="308"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="small"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R84-7g-UQC">
-                                <rect key="frame" x="129" y="574" width="134" height="65"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R84-7g-UQC">
+                                <rect key="frame" x="129" y="574" width="135" height="65"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Upload"/>
                                 <connections>
                                     <action selector="actionButtonClicked:" destination="Fyy-1F-a47" eventType="touchUpInside" id="xBk-g5-tn3"/>
                                 </connections>
                             </button>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0f-yp-8oL">
-                                <rect key="frame" x="74" y="489" width="244" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="comment" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w0f-yp-8oL">
+                                <rect key="frame" x="74" y="489" width="245" height="34"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="s6E-Xg-TTd"/>
+                                    <constraint firstAttribute="height" constant="34" id="RKY-AN-Sjf"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -39,16 +40,20 @@
                         <viewLayoutGuide key="safeArea" id="dGw-2A-qM2"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="R84-7g-UQC" firstAttribute="leading" secondItem="dGw-2A-qM2" secondAttribute="leading" constant="129" id="H2T-NW-ioR"/>
-                            <constraint firstItem="w0f-yp-8oL" firstAttribute="centerX" secondItem="R84-7g-UQC" secondAttribute="centerX" id="R1L-uA-VRy"/>
-                            <constraint firstItem="a40-3J-M7l" firstAttribute="top" secondItem="dGw-2A-qM2" secondAttribute="top" constant="64" id="XPb-J5-gDu"/>
-                            <constraint firstItem="dGw-2A-qM2" firstAttribute="bottom" secondItem="R84-7g-UQC" secondAttribute="bottom" constant="130" id="Xir-4Q-GYi"/>
-                            <constraint firstItem="w0f-yp-8oL" firstAttribute="top" secondItem="a40-3J-M7l" secondAttribute="bottom" constant="58" id="aco-uC-XQ2"/>
-                            <constraint firstItem="R84-7g-UQC" firstAttribute="top" secondItem="w0f-yp-8oL" secondAttribute="bottom" constant="51" id="doF-lg-QEy"/>
-                            <constraint firstItem="a40-3J-M7l" firstAttribute="leading" secondItem="dGw-2A-qM2" secondAttribute="leading" constant="51" id="f9O-v4-BBf"/>
-                            <constraint firstItem="w0f-yp-8oL" firstAttribute="centerX" secondItem="ygr-M4-e1X" secondAttribute="centerX" id="gMK-xL-Oxg"/>
-                            <constraint firstItem="a40-3J-M7l" firstAttribute="centerX" secondItem="w0f-yp-8oL" secondAttribute="centerX" id="pdf-BH-c90"/>
-                            <constraint firstItem="w0f-yp-8oL" firstAttribute="leading" secondItem="dGw-2A-qM2" secondAttribute="leading" constant="74" id="yh7-dV-Gqh"/>
+                            <constraint firstItem="w0f-yp-8oL" firstAttribute="top" secondItem="a40-3J-M7l" secondAttribute="bottom" constant="58" id="7kB-ur-aqY"/>
+                            <constraint firstItem="w0f-yp-8oL" firstAttribute="centerX" secondItem="ygr-M4-e1X" secondAttribute="centerX" id="AHa-F9-kgn"/>
+                            <constraint firstItem="a40-3J-M7l" firstAttribute="top" secondItem="dGw-2A-qM2" secondAttribute="top" constant="64" id="EBp-Gs-7I3"/>
+                            <constraint firstItem="a40-3J-M7l" firstAttribute="leading" secondItem="dGw-2A-qM2" secondAttribute="leading" constant="51" id="KdJ-oL-dTQ"/>
+                            <constraint firstItem="R84-7g-UQC" firstAttribute="leading" secondItem="dGw-2A-qM2" secondAttribute="leading" constant="129" id="OkQ-4A-kzC"/>
+                            <constraint firstItem="w0f-yp-8oL" firstAttribute="top" secondItem="a40-3J-M7l" secondAttribute="bottom" constant="58" id="XTz-7H-N8k"/>
+                            <constraint firstItem="a40-3J-M7l" firstAttribute="centerX" secondItem="w0f-yp-8oL" secondAttribute="centerX" id="ZCA-p8-XHC"/>
+                            <constraint firstItem="a40-3J-M7l" firstAttribute="top" secondItem="dGw-2A-qM2" secondAttribute="top" constant="64" id="bqW-Al-5Io"/>
+                            <constraint firstItem="dGw-2A-qM2" firstAttribute="bottom" secondItem="R84-7g-UQC" secondAttribute="bottom" constant="130" id="cUX-XF-yc7"/>
+                            <constraint firstItem="w0f-yp-8oL" firstAttribute="leading" secondItem="dGw-2A-qM2" secondAttribute="leading" constant="74" id="eRi-qf-4Mh"/>
+                            <constraint firstItem="R84-7g-UQC" firstAttribute="top" secondItem="w0f-yp-8oL" secondAttribute="bottom" constant="51" id="eTq-me-PP2"/>
+                            <constraint firstItem="w0f-yp-8oL" firstAttribute="centerX" secondItem="R84-7g-UQC" secondAttribute="centerX" id="inQ-2s-x92"/>
+                            <constraint firstItem="dGw-2A-qM2" firstAttribute="bottom" secondItem="R84-7g-UQC" secondAttribute="bottom" constant="130" id="qT4-dh-MRG"/>
+                            <constraint firstItem="R84-7g-UQC" firstAttribute="top" secondItem="w0f-yp-8oL" secondAttribute="bottom" constant="51" id="wqS-9H-Jor"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Upload" image="u.circle.fill" catalog="system" id="shl-Q7-dzR"/>
