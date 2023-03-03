@@ -6,10 +6,16 @@
 //
 
 import UIKit
+import Firebase
 
 class FeedViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    var userEmailArray = [String]()
+    var userCommentArray = [String]()
+    var likeArray = [Int]()
+    var userImageArray = [String]()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,17 +24,62 @@ class FeedViewController: UIViewController, UITableViewDelegate, UITableViewData
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        getDataFromFirestore()
+    }
+    
+    func getDataFromFirestore() {
+        
+        let firestoreDatabase = Firestore.firestore()
+        
+        firestoreDatabase.collection("Posts").addSnapshotListener { snapshot, error in
+            
+            if error != nil {
+                print(error?.localizedDescription)
+            } else {
+                if snapshot?.isEmpty != true && snapshot != nil {
+                    
+                    for document in snapshot!.documents {
+                        let documentID = document.documentID
+                        
+                        if let postedBy = document.get("postedBy") as? String {
+                            self.userEmailArray.append(postedBy)
+                        }
+                        
+                        if let postComment = document.get("postComment") as? String {
+                            self.userCommentArray.append(postComment)
+                        }
+                        
+                        if let likes = document.get("likes") as? Int {
+                            self.likeArray.append(likes)
+                        }
+                        
+                        if let image = document.get("imageUrl") as? String {
+                            self.userImageArray.append(image)
+                        }
+                        
+                        
+                    }
+                    
+                    self.tableView.reloadData()
+                    
+                }
+                
+            }
+        }
+        
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 4
+        return userEmailArray.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! FeedCell
-        cell.userEmailLabel.text = "user@gmail.com"
-        cell.likeLabel.text = "25"
-        cell.commentLabel.text = "comment"
+        cell.userEmailLabel.text = userEmailArray[indexPath.row]
+        cell.likeLabel.text = String(likeArray[indexPath.row])
+        cell.commentLabel.text = userCommentArray[indexPath.row]
         cell.userImageView.image = UIImage(named: "select.png")
         return cell
     }
