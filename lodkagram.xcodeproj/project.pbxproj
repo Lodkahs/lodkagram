@@ -11,6 +11,7 @@
 		49241F7C29AFCAFD00D62EDD /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49241F7B29AFCAFD00D62EDD /* FeedViewController.swift */; };
 		49241F7E29AFCB1500D62EDD /* UploadViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49241F7D29AFCB1500D62EDD /* UploadViewController.swift */; };
 		49241F8029AFCB2600D62EDD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49241F7F29AFCB2600D62EDD /* SettingsViewController.swift */; };
+		4928342A29B2A0290013F1A8 /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4928342929B2A0290013F1A8 /* FeedCell.swift */; };
 		497B401429AE6AA6003333F9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401329AE6AA6003333F9 /* AppDelegate.swift */; };
 		497B401629AE6AA6003333F9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401529AE6AA6003333F9 /* SceneDelegate.swift */; };
 		497B401829AE6AA6003333F9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 497B401729AE6AA6003333F9 /* ViewController.swift */; };
@@ -24,6 +25,7 @@
 		49241F7B29AFCAFD00D62EDD /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		49241F7D29AFCB1500D62EDD /* UploadViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadViewController.swift; sourceTree = "<group>"; };
 		49241F7F29AFCB2600D62EDD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		4928342929B2A0290013F1A8 /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		497B401029AE6AA6003333F9 /* lodkagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lodkagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		497B401329AE6AA6003333F9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		497B401529AE6AA6003333F9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 				497B401529AE6AA6003333F9 /* SceneDelegate.swift */,
 				497B401729AE6AA6003333F9 /* ViewController.swift */,
 				49241F7B29AFCAFD00D62EDD /* FeedViewController.swift */,
+				4928342929B2A0290013F1A8 /* FeedCell.swift */,
 				49241F7D29AFCB1500D62EDD /* UploadViewController.swift */,
 				49241F7F29AFCB2600D62EDD /* SettingsViewController.swift */,
 				497B401929AE6AA6003333F9 /* Main.storyboard */,
@@ -219,6 +222,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4928342A29B2A0290013F1A8 /* FeedCell.swift in Sources */,
 				497B401829AE6AA6003333F9 /* ViewController.swift in Sources */,
 				49241F7E29AFCB1500D62EDD /* UploadViewController.swift in Sources */,
 				497B401429AE6AA6003333F9 /* AppDelegate.swift in Sources */,
