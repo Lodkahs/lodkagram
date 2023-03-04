@@ -17,6 +17,8 @@ class FeedCell: UITableViewCell {
     
     @IBOutlet weak var likeLabel: UILabel!
     
+    @IBOutlet weak var documentIdLabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,6 +32,8 @@ class FeedCell: UITableViewCell {
     
     
     @IBAction func likeButtonClicked(_ sender: Any) {
+        
+        
         
     }
     
